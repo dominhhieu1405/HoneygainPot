@@ -271,8 +271,9 @@ def main() -> None:
         balance: dict = balance.json()
         print(f'You currently have {balance["data"]["payout"]["credits"]} Credits.')
         logging.info(f'You currently have {balance["data"]["payout"]["credits"]} Credits.')
-        print('Closing HoneygainAutoClaim!')
-        logging.info('Closing HoneygainAutoClaim!')
+        print('Sleeping 24 hours!')
+        logging.info('Sleeping 24 hours!')
+        print('--------------------------------')
         logging.info('--------------------------------')
 
 

@@ -12,9 +12,7 @@ to delete this bot I'll do it.
  
 ## List of Content  
   
-- [Installation/Usage](#usage)  
-- [Creating a schedule](#create-a-schedule)  
-- [Config changes](#config)  
+- [Installation/Usage](#usage)
   
 ## Requirements  
 - [Python 3.10+](https://www.python.org/downloads/)  
@@ -46,74 +44,3 @@ python3 main.py
 - [Create a schedule](#schedule-linux) to run the program every day.  
 - Enjoy your **daily bonus**!  
   
-### Docker  
-- **Clone** or **download** this repository.
-```commandline
-git clone https://github.com/dominhhieu1405/HoneygainPot.git
-```
-- Navigate in to the directory `HoneygainAutoClaim`
-```commandline
-cd HoneygainAutoClaim
-```  
-- To build the Dockerfile run the command below:  
-```commandline  
-docker build -t honeygainautoclaim .
-```  
-- To run the docker container  
-```commandline  
-docker run -it --restart unless-stopped honeygainautoclaim  
-```  
-- [Create a schedule](#schedule-docker) to run the program every day.  
-- Enjoy your **daily bonus**!  
-  
-   
-### <a id='create-a-schedule'></a>Create a schedule  
-  
-#### <a id='schedule-linux'></a>Linux  
-  
-1.  
-```commandline  
-crontab -e  
-```  
-2. Add this line at the **bottom** `0 8 * * * python3 /absolut folder path/main.py` to run the script every day at 8:00 am.  
-  
-#### <a id='schedule-docker'></a>Docker 
-  
-
-  
-1. You can find the docker container ID by running  
-``` commandline  
-docker ps -a  
-```  
-2.  
-```commandline  
-crontab -e  
-```  
-or the windows equivalent via the Task Scheduler.  
-3. Add this line at the **bottom**   `0 8 * * * docker start <container_id>`. Make sure to replace <container_id> with the ID of your Docker container.  
-  
-  
-#### Windows  
-  
-1. Open the `Task Scheduler`  
-2. Create a new **basic Task**  
-3. Give the task a **name**  
-4. Choose a **daily trigger**  
-5. Select the **time**, when to run it  
-6. Select as action to **start a program**  
-7. Select the path to the **main.py**  
-  
-## <a id='config'></a>Config  
-  
-### Windows  
-  
-- Open the folder where the main.py is being located  
-- Navigate in to Config  
-- Open the file `HoneygainConfig.toml`  
-  
-### Linux  
-  
--
-```commandline  
-nano HoneygainAutoClaim/Config/HoneygainConfig.toml  
-```

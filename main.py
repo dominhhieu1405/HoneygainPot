@@ -9,17 +9,21 @@ from getpass import getpass
 import requests
 from requests import Response
 
+current_path = os.path.abspath(os.path.dirname(__file__))
+
 # path to the token file
-config_folder: str = 'Config'
+config_folder: str = current_path + '/Config'
 token_file: str = config_folder + '/HoneygainToken.json'
 config_path: str = config_folder + '/HoneygainConfig.toml'
+log_path: str = current_path + '/Logs'
+log_file: str = log_path + '/HoneygainAutoClaim.log'
 
 header: dict[str | str] = {'Authorization': ''}
 
 # Creates a Log
-if not os.path.exists('Logs'):
-    os.mkdir('Logs')
-logging.basicConfig(filename='Logs/HoneygainAutoClaim.log', filemode='w', encoding='utf-8', level=logging.INFO,
+if not os.path.exists(log_path):
+    os.mkdir(log_path)
+logging.basicConfig(filename=log_file, filemode='w', encoding='utf-8', level=logging.INFO,
                     format='%(levelname)s ' '%(asctime)s ' '%(message)s', datefmt='%d/%m/%Y %H:%M:%S')
 logging.info("Started HoneygainAutoClaim!")
 print('Started HoneygainAutoClaim!')

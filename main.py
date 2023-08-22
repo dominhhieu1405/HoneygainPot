@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import configparser
+import time
 import json
 import logging
 import os
@@ -272,7 +273,10 @@ def main() -> None:
         logging.info(f'You currently have {balance["data"]["payout"]["credits"]} Credits.')
         print('Closing HoneygainAutoClaim!')
         logging.info('Closing HoneygainAutoClaim!')
+        logging.info('--------------------------------')
 
 
 if __name__ == '__main__':
-    main()
+    while True:
+        main()
+        time.sleep(24 * 60 * 60)

@@ -1,8 +1,8 @@
 # HoneygainAutoClaim  
 [![CodeQL](https://github.com/MrLoLf/HoneygainAutoClaim/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/MrLoLf/HoneygainAutoClaim/actions/workflows/github-code-scanning/codeql)  
   
-HoneygainAutoClaim is a simple [Python](https://www.python.org/) script that **automatically claims your daily bonus**  
-and **achievements** from [Honeygain](https://r.honeygain.me/ROSCH76C7D). Honeygain is a  
+HoneygainPot is a simple [Python](https://www.python.org/) script that **automatically claims your daily bonus**  
+and **achievements** from [Honeygain]([https://r.honeygain.me/ROSCH76C7D](https://r.honeygain.me/DOMIN12499)). Honeygain is a  
 service that allows you to earn **passive income** by **sharing** your **internet** connection with others.  
   
 ## Disclaimer  
@@ -18,7 +18,7 @@ to delete this bot I'll do it.
 - [Config changes](#config)  
   
 ## Requirements  
-- [Python 3](https://www.python.org/downloads/)  
+- [Python 3.10+](https://www.python.org/downloads/)  
   
   
 ## <a id='usage'></a>Usage  
@@ -26,11 +26,11 @@ to delete this bot I'll do it.
 ### Windows/Linux  
 - **Clone** or **download** this repository.
 ```commandline
-git clone https://github.com/MrLoLf/HoneygainAutoClaim.git
+git clone https://github.com/dominhhieu1405/HoneygainPot.git
 ```
-- Navigate in to the directory `HoneygainAutoClaim`
+- Navigate in to the directory `HoneygainPot`
 ```commandline
-cd HoneygainAutoClaim
+cd HoneygainPot
 ```
 - Install the **required** modules with  
 ```commandline  
@@ -42,7 +42,7 @@ cd ~
 ```
 - Run the script with  
 ```commandline  
-python3 /absolut folder path/main.py  
+python3 main.py  
 ```  
 - [Create a schedule](#schedule-linux) to run the program every day.  
 - Enjoy your **daily bonus**!  
@@ -50,7 +50,7 @@ python3 /absolut folder path/main.py
 ### Docker  
 - **Clone** or **download** this repository.
 ```commandline
-git clone https://github.com/MrLoLf/HoneygainAutoClaim.git
+git clone https://github.com/dominhhieu1405/HoneygainPot.git
 ```
 - Navigate in to the directory `HoneygainAutoClaim`
 ```commandline
@@ -116,5 +116,5 @@ or the windows equivalent via the Task Scheduler.
   
 -
 ```commandline  
-nano /absoulut folder path/HoneygainAutoClaim/Config/HoneygainConfig.toml  
+nano HoneygainAutoClaim/Config/HoneygainConfig.toml  
 ```

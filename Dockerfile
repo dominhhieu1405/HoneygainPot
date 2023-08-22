@@ -4,9 +4,9 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y git
 
-RUN git clone https://github.com/MrLoLf/HoneygainAutoClaim.git
+RUN git clone https://github.com/dominhhieu1405/HoneygainPot.git
 
-WORKDIR /app/HoneygainAutoClaim
+WORKDIR /app/HoneygainPot
 
 RUN pip install --no-cache-dir -r requirements.txt
 
